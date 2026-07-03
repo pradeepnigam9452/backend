@@ -21,6 +21,9 @@ const todoSchema = new mongoose.Schema({
 const Todo = mongoose.model("Todo", todoSchema);
 
 // get all todos
+app.get("/", (req, res) => {
+  res.send({message: "Welcome to the Todo API", status: "success", use: "/api/todos to get all todos"});
+});
 app.get("/api/todos", async (req, res) => {
   const todos = await Todo.find();
   res.json(todos);
