@@ -1,0 +1,27 @@
+# node modules
+node_modules/
+
+# environment files
+.env
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# build files
+dist/
+build/
+
+# React Native
+android/.gradle/
+android/app/build/
+ios/Pods/
+
+# Expo
+.expo/
+.expo-shared/
+
+# OS files
+.DS_Store
+Thumbs.db
